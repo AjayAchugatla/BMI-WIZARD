@@ -58,6 +58,8 @@ nav ul li a:hover,nav ul li a:active{
     margin-right: 40px;
     display: none;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 #check{
@@ -69,20 +71,18 @@ nav ul li a:hover,nav ul li a:active{
         display: block;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
         background:rgb(81, 130, 155,0.2);
-        display: none;
+        top:-1000px;
         text-align:center;
-        transition: all .5s;
-    }
-    
+        transition: all .5s linear;
+    }   
     nav ul li{
         display: block;
     }
-
     nav ul li a{
         font-size: 20px;
         color: rgb(90, 90, 90);
@@ -94,10 +94,6 @@ nav ul li a:hover,nav ul li a:active{
         background-color: rgba(124, 124, 124, 0.2);
         transition: .2s;
     }
-    
-    #check:checked ~ ul{
-        display: block;
-    }
 }
 
 @media (max-width:500px){
@@ -108,7 +104,7 @@ nav ul li a:hover,nav ul li a:active{
 
 }
 
-
-
-
-
+.block{
+    top:80px;
+    transition: top .5s ;
+}

@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <title>BMI Wizard : Your Health Navigator</title>
 </head>
@@ -25,7 +27,32 @@
         </ul>
         
     </nav>
-    <h1></h1>
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <div class="card shadow shadow">
+                    <h1 class="title"> BMI Calculator </h1>
+                    <div class="d-flex flex-column justify-content-end">
+                        <div>
+                            <label class="label" for="weight-input"> weight in(kg) </label>
+                            <input type="text" id="weight-input" class="input-box" placeholder="Enter your weight">
+                        </div>
+                        <div>
+                            <label class="label" for="height-input"> Height in(cm) </label>
+                            <input class="input-box" type="text" id="height-input" placeholder="Enter your height">
+                        </div>
+                        <div>
+                            <label class="label" for="age-input"> Age </label>
+                            <input class="input-box3 p-2" type="text" id="ageInput" placeholder="Enter your age">
+                            <button id="BMIButtonResult" class="shadow__btn mt-5 ml-5"> Calculate BMI </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/0ff8f72c28.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>

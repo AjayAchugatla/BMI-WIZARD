@@ -8,9 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Protest+Riot&display=swap" rel="stylesheet">
     <title>BMI Wizard : Your Health Navigator</title>
 </head>
 <body>
@@ -24,35 +23,66 @@
             <li class="li"><a href="">What is BMI ?</a></li>
             <li class="li"><a href="">Facts About BMI</a></li>
             <li class="li"><a href="">About Us</a></li>
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                <input type="checkbox" class="input">
+                <span class="slider"></span>
+            </label>
         </ul>
-        
     </nav>
-    <div class="container">
-        <div class="row ">
-            <div class="col">
-                <div class="card shadow shadow">
-                    <h1 class="title"> BMI Calculator </h1>
-                    <div class="d-flex flex-column justify-content-end">
-                        <div>
-                            <label class="label" for="weight-input"> weight in(kg) </label>
-                            <input type="text" id="weight-input" class="input-box" placeholder="Enter your weight">
-                        </div>
-                        <div>
-                            <label class="label" for="height-input"> Height in(cm) </label>
-                            <input class="input-box" type="text" id="height-input" placeholder="Enter your height">
-                        </div>
-                        <div>
-                            <label class="label" for="age-input"> Age </label>
-                            <input class="input-box3 p-2" type="text" id="ageInput" placeholder="Enter your age">
-                            <button id="BMIButtonResult" class="shadow__btn mt-5 ml-5"> Calculate BMI </button>
-                        </div>
 
-                    </div>
+    <main>
+        <div class="box">
+            <form >
+                <div class="inp1 inp">
+                    <span>Gender:</span>
+                    <label class="gender">
+                        <input type="radio" name="gender" id="male">
+                        <div class="radio-btn">
+                            <img src="./male.jpg" alt="" height="50px" width="50px">
+                            <p>Male</p>
+                        </div>
+                    </label>
+                    <label class="gender">
+                        <input type="radio" name="gender" id="female">
+                        <div class="radio-btn">
+                            <img src="./female.jpg" alt="" height="50px" width="50px">
+                            <p>Female</p>
+                        </div>
+                    </label>   
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="inp2 inp">
+                    <label for="age">Age : </label>
+                    <input type="text" id="age" > 
+                </div>
 
+                <div class="inp3 inp">
+                    <label for="weight">Weight : </label>
+                    <input type="text"  id="kgs" placeholder="kgs">
+                    <input type="text"  id="lbs" class="none" placeholder="lbs">
+                    <button class="units" id="w" >Switch to lbs</button>
+                </div>
+                <div class="inp4 inp">
+                    <label for="weight">Height : </label>
+                    <input type="text"  id="cms" placeholder="cms">
+                    <input type="text"  id="fts" class="none" placeholder="feets">
+                    <input type="text"  id="ins" class="none" placeholder="inches">
+                    <button class="units" id="h" >Switch to fts</button>
+                </div>
+                <div class="sub">
+                    <button class="cta" type="submit">
+                        <span>Calculate</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <hr>
     <script src="https://kit.fontawesome.com/0ff8f72c28.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>

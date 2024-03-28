@@ -285,8 +285,16 @@ hr{
 .gender input:checked + .radio-btn{
   background-color:rgb(220, 220, 220);
   border-radius: 10px;
-  outline: 2px solid rgb(74, 143, 212);
+  outline: 2px solid rgb(43, 133, 224);
 }
+
+.female input:checked + .radio-btn{
+  background-color:rgb(220, 220, 220);
+  border-radius: 10px;
+  outline: 2px solid rgb(212, 74, 203);
+}
+
+
 
 .radio-btn{
   width:80px;
@@ -352,6 +360,8 @@ hr{
   width:64px;
   font-size: 13px;
 }
+
+
 .cta {
   position: relative;
   padding: 12px 18px;

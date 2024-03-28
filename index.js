@@ -25,6 +25,8 @@ document.querySelectorAll(".units")[0].addEventListener("click",(e)=>{
     }
     c1++;
 })
+
+
 document.querySelectorAll(".units")[1].addEventListener("click",(e)=>{
     e.preventDefault();
     document.querySelector("#cms").classList.toggle("none");
@@ -39,24 +41,52 @@ document.querySelectorAll(".units")[1].addEventListener("click",(e)=>{
     }
     c2++;
 })
+
+let gen = "";
+document.querySelector("#male").addEventListener("click",(e)=>{
+    gen = (e.target.id);    
+})
+
+document.querySelector("#female").addEventListener("click",(e)=>{
+    gen = (e.target.id);    
+})
+
+
+
 document.querySelector(".cta").addEventListener("click",(e)=>{
-    e.preventDefault();
-    let w,fts,ins,cms;
+    // e.preventDefault();
+
+    if(gen==="")
+    alert("Select gender");
+    let w=0,fts=0,ins=0,cms=0,age=0,val=0;
+    age = document.querySelector("#age").value;
+
     if(c1%2===0){
-        let val = document.querySelector("#kgs").value;
-        w = parseInt(val);
+        val = document.querySelector("#kgs").value;
     }
     else{
-        let  = document.querySelector("#lbs").value;
+        val = document.querySelector("#lbs").value;
+        val = Math.round(val * 0.4535);
     }
     if(c2%2===0){
-        cms = parseInt(document.querySelector("#cms").value);
+        cms = (document.querySelector("#cms").value);
+        cms = cms /100;
     }
     else{
-        fts = parseInt(document.querySelector("#fts").value);
-        ins = parseInt(document.querySelector("#ins").value);
+        fts = (document.querySelector("#fts").value);
+        ins = (document.querySelector("#ins").value);
+        cms = Math.round((fts*30.48) + (ins*2.54));
+        cms = cms/100;
     }
 
-    // console.log(isNaN(cms));
+    if(age==="" || isNaN(cms) || isNaN(val) || cms==0 || val ==0){
+        alert("Enter all values properly");
+    }
+    else{
+        let res = (val)/(cms*cms);
+        console.log(Math.floor(res));
+    }
+    
 })
+
 

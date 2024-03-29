@@ -436,6 +436,7 @@ hr{
   top:-3px;
   gap: 50px;
   padding-top: 50px;
+  display: none;
 }
 
 .res{

@@ -51,8 +51,6 @@ document.querySelector("#female").addEventListener("click", (e) => {
 
 document.querySelector(".cta").addEventListener("click", (e) => {
     e.preventDefault();
-    if (gen === "")
-        alert("Select gender");
     let w = 0, fts = 0, ins = 0, cms = 0, age = 0, val = 0;
     age = document.querySelector("#age").value;
 
@@ -77,6 +75,10 @@ document.querySelector(".cta").addEventListener("click", (e) => {
     if (age === "" || isNaN(cms) || isNaN(val) || cms == 0 || val == 0) {
         e.preventDefault();
         alert("Enter all values properly");
+    }
+    else if (gen === ""){
+        e.preventDefault();
+        alert("Select gender");
     }
     else {
         document.querySelector("main").style.display = "none";

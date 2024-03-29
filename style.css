@@ -12,7 +12,7 @@
 }
 
 .none{
-  display: none;
+  display: none !important;
 }
 
 nav{
@@ -80,6 +80,11 @@ nav ul li a:hover,nav ul li a:active{
   }
 
   @media (max-width:1004px) {
+    
+    .main img{
+      height: 40vh !important;
+      width: 80vw !important;
+    }
     .checkbtn{
       display: block;
     }
@@ -114,6 +119,7 @@ nav ul li a:hover,nav ul li a:active{
       top: 45px !important;
       left: 0px !important;
     }
+
   }
 
 @media (max-width:500px){
@@ -417,4 +423,28 @@ hr{
 
 .cta:active {
   transform: scale(0.95);
+}
+
+
+.main{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  top:-3px;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.res{
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif ;  
+}
+
+.main img{
+  height: 40vh;
+  width: 40vw;
+  border-radius: 4px;
 }

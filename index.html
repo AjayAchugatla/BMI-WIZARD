@@ -40,43 +40,41 @@
                     <label class="gender">
                         <input type="radio" name="gender" id="male">
                         <div class="radio-btn">
-                            <img src="./male.jpg" alt="" height="50px" width="50px">
+                            <img src="./male.jpg" alt="" height="40px" width="40px">
                             <p>Male</p>
                         </div>
                     </label>
                     <label class="gender female">
                         <input type="radio" name="gender" id="female">
                         <div class="radio-btn">
-                            <img src="./female.jpg" alt="" height="50px" width="50px">
+                            <img src="./female.jpg" alt="" height="40px" width="40px">
                             <p>Female</p>
                         </div>
                     </label>   
                 </div>
                 <div class="inp2 inp">
                     <label for="age">Age : </label>
-                    <input type="text" id="age" > 
+                    <input type="text" id="age" required > 
                 </div>
 
                 <div class="inp3 inp">
                     <label for="weight">Weight : </label>
-                    <input type="text"  id="kgs" placeholder="kgs">
-                    <input type="text"  id="lbs" class="none" placeholder="lbs">
-                    <button class="units" id="w" >Switch to lbs</button>
+                    <input type="text"  id="kgs" placeholder="kgs" required>
+                    <input type="text"  id="lbs" class="none" placeholder="lbs" required>
+                    <button class="units" id="w" >in lbs</button>
                 </div>
                 <div class="inp4 inp">
                     <label for="weight">Height : </label>
-                    <input type="text"  id="cms" placeholder="cms">
-                    <input type="text"  id="fts" class="none" placeholder="feets">
-                    <input type="text"  id="ins" class="none" placeholder="inches">
-                    <button class="units" id="h" >Switch to fts</button>
+                    <input type="text"  id="cms" placeholder="cms" required>
+                    <div class="met" class="none">
+                        <input type="text"  id="fts" class="none" placeholder="feets" required>
+                        <input type="text"  id="ins" class="none" placeholder="inches" required>
+                    </div>
+                    <button class="units" id="h" >in fts</button>
                 </div>
                 <div class="sub">
                     <button class="cta" type="submit">
                         <span>Calculate</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
                       </button>
                 </div>
             </form>

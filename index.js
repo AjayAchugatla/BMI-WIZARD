@@ -17,10 +17,10 @@ document.querySelectorAll(".units")[0].addEventListener("click", (e) => {
     document.querySelector("#kgs").classList.toggle("none");
     let state = document.querySelectorAll(".units")[0];
     if (c1 % 2 === 0) {
-        state.innerText = "Swicth to kgs";
+        state.innerText = "in kgs";
     }
     else {
-        state.innerText = "Swicth to lbs";
+        state.innerText = "in lbs";
     }
     c1++;
 })
@@ -32,10 +32,10 @@ document.querySelectorAll(".units")[1].addEventListener("click", (e) => {
     document.querySelector("#ins").classList.toggle("none");
     let state = document.querySelectorAll(".units")[1];
     if (c2 % 2 === 0) {
-        state.innerText = "Swicth to cms";
+        state.innerText = "in cms";
     }
     else {
-        state.innerText = "Swicth to fts";
+        state.innerText = "in fts";
     }
     c2++;
 })

@@ -303,13 +303,13 @@ hr{
 
 
 .radio-btn{
-  width:80px;
-  height:80px;
+  width:70px;
+  height:70px;
   position: relative;
   padding: 3px 10px 0;
   text-align: center;
   cursor: pointer;
-  margin-left: 12px;
+  margin-left: 32px;
 }
 
 .inp1 p{
@@ -321,8 +321,9 @@ hr{
   position: relative;
   top: 29px;
   height: fit-content;
-  font-size: 26px;
+  font-size: 23px;
   color: black;
+
 }
 
 .inp2 input,.inp3 input, .inp4 input{
@@ -335,18 +336,48 @@ hr{
   outline: none;
   border-radius: 4px;
   border: 1px solid black;
+  margin-left: 20px;
+}
+
+
+.inp2 input{
+  margin-left: 50px;
+}
+
+.inp4>input{
+  margin-left: 30px;
+  margin-right: 8px;
+}
+
+.inp4{
+  display: flex;
+}
+
+.met{
+  margin-left: 10px;
+}
+
+.met input{
+  padding: 4px 7px;
+}
+
+.met>input:nth-child(2){
+  margin-left: 0px;
+  margin-right: 12px;
 }
 
 .inp{
   margin: 25px 30px;
-  font-size: 24px;
+  font-size: 22px;
   color: black;
 }
 
+
+
 .inp button{
   width:fit-content;
-  left: 10px;
   position: relative;
+  left: 18px;
   top: -2px;
   background: none;
   border: none;
@@ -354,6 +385,11 @@ hr{
   text-decoration: underline;
   cursor: pointer;
 }
+
+.inp4 button{
+  left: 8px;
+}
+
 
 .sub
 {
@@ -365,64 +401,6 @@ hr{
 #fts,#ins{
   width:64px;
   font-size: 13px;
-}
-
-
-.cta {
-  position: relative;
-  padding: 12px 18px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #b1dae7;
-  width: 45px;
-  height: 45px;
-  transition: all 0.3s ease;
-}
-
-.cta span {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #234567;
-}
-
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #234567;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-
-.cta:hover:before {
-  width: 100%;
-  background: #b1dae7;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-}
-
-.cta:active {
-  transform: scale(0.95);
 }
 
 

@@ -113,7 +113,6 @@ nav ul li a:hover,nav ul li a:active{
         background-color: rgba(255, 255, 255, 0.238);
         transition: .2s;
     }
-    
     .switch
     {
       top: 45px !important;
@@ -125,7 +124,7 @@ nav ul li a:hover,nav ul li a:active{
 @media (max-width:500px){
     .logo{
       font-size: 30px;
-        padding: 0px 20px; 
+      padding: 0px 20px; 
     }
     
 }
@@ -258,7 +257,7 @@ main{
 
 .box{
   font-family: "Josefin Sans", sans-serif ;  
-  min-width: 370px;
+  min-width: 350px;
   height: 25vh;
   min-height: 400px;
   display: flex;
@@ -301,7 +300,6 @@ hr{
 }
 
 
-
 .radio-btn{
   width:70px;
   height:70px;
@@ -310,6 +308,7 @@ hr{
   text-align: center;
   cursor: pointer;
   margin-left: 32px;
+  margin-right: -31px;
 }
 
 .inp1 p{
@@ -344,40 +343,33 @@ hr{
   margin-left: 50px;
 }
 
-.inp4>input{
-  margin-left: 30px;
-  margin-right: 8px;
+.inp4 input{
+  margin-left: 22px;
 }
 
-.inp4{
-  display: flex;
+.other p{
+  position: relative;
+  top: 23px;
+  font-size: 20px;
+  left: -1px;
 }
 
-.met{
-  margin-left: 10px;
-}
-
-.met input{
-  padding: 4px 7px;
-}
-
-.met>input:nth-child(2){
-  margin-left: 0px;
-  margin-right: 12px;
+.other input:checked + .radio-btn{
+  background-color:rgb(220, 220, 220);
+  border-radius: 10px;
+  outline: 2px solid rgb(164, 24, 235);
 }
 
 .inp{
-  margin: 25px 30px;
+  margin: 25px 56px 25px 30px;
   font-size: 22px;
   color: black;
 }
 
-
-
 .inp button{
   width:fit-content;
+  left: 10px;
   position: relative;
-  left: 18px;
   top: -2px;
   background: none;
   border: none;
@@ -385,11 +377,6 @@ hr{
   text-decoration: underline;
   cursor: pointer;
 }
-
-.inp4 button{
-  left: 8px;
-}
-
 
 .sub
 {
@@ -401,6 +388,11 @@ hr{
 #fts,#ins{
   width:64px;
   font-size: 13px;
+}
+
+#ins{
+  margin-left: 0px;
+  margin-right: -4px;
 }
 
 
@@ -426,4 +418,17 @@ hr{
   height: 40vh;
   width: 40vw;
   border-radius: 4px;
+}
+
+.cta{
+  padding: 10px 17px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(174, 174, 174);
+  color: black;
+  font-size: 20px;
+}
+
+.cta:hover{
+  cursor: pointer;
 }

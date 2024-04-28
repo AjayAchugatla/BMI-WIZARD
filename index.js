@@ -1,13 +1,11 @@
 document.querySelector(".checkbtn").addEventListener("click", () => {
     document.querySelector("nav ul").classList.toggle("block");
     document.querySelector("main").classList.toggle("none");
-    document.querySelector(".main").classList.toggle("none");
 })
 
 document.querySelector(".input").addEventListener("click", () => {
     document.querySelector("nav").classList.toggle("black");
     document.querySelector("main").classList.toggle("black");
-    document.querySelector(".main").classList.toggle("black");
 })
 
 var c1 = 0, c2 = 0;
@@ -43,15 +41,23 @@ document.querySelectorAll(".units")[1].addEventListener("click", (e) => {
 let gen = "";
 document.querySelector("#male").addEventListener("click", (e) => {
     gen = (e.target.id);
+    document.querySelector(".cta").style.backgroundColor = "rgb(43, 133, 224)"
 })
 
 document.querySelector("#female").addEventListener("click", (e) => {
     gen = (e.target.id);
+    document.querySelector(".cta").style.backgroundColor = "rgb(212, 74, 203)"
 })
+
+document.querySelector("#other").addEventListener("click", (e) => {
+    gen = (e.target.id);
+    document.querySelector(".cta").style.backgroundColor = "rgb(164, 24, 235)"
+})
+
 
 document.querySelector(".cta").addEventListener("click", (e) => {
     e.preventDefault();
-    let w = 0, fts = 0, ins = 0, cms = 0, age = 0, val = 0;
+    let  fts = 0, ins = 0, cms = 0, age = 0, val = 0;
     age = document.querySelector("#age").value;
 
     if (c1 % 2 === 0) {

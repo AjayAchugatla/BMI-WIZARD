@@ -1,6 +1,7 @@
 document.querySelector(".checkbtn").addEventListener("click", () => {
     document.querySelector("nav ul").classList.toggle("block");
     document.querySelector("main").classList.toggle("none");
+    document.querySelector(".main").classList.toggle("none");
 })
 
 document.querySelector(".input").addEventListener("click", () => {

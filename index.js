@@ -1,5 +1,6 @@
 document.querySelector(".checkbtn").addEventListener("click", () => {
     document.querySelector("nav ul").classList.toggle("block");
+    document.querySelector("section").classList.toggle("block");
     document.querySelector("main").classList.toggle("none");
     document.querySelector(".main").classList.toggle("none");
 })
@@ -7,6 +8,8 @@ document.querySelector(".checkbtn").addEventListener("click", () => {
 document.querySelector(".input").addEventListener("click", () => {
     document.querySelector("nav").classList.toggle("black");
     document.querySelector("main").classList.toggle("black");
+    document.querySelector(".main").classList.toggle("black");
+    document.querySelector("body").classList.toggle("black");
 })
 
 var c1 = 0, c2 = 0;
@@ -106,6 +109,9 @@ document.querySelector(".cta").addEventListener("click", (e) => {
             document.querySelector(".val").style.color = "red";
         }
     }
-
 })
 
+document.querySelector(".Btn").addEventListener("click",()=>{
+    document.querySelector("main").style.display = "flex";
+    document.querySelector(".main").classList.add("none");
+})

@@ -490,7 +490,8 @@ section img{
     margin-left: 0px;
   }  
   .what{
-    margin: 0 30px;
+    margin: 0 0px;
+    text-align: left;
   }
   section h2{
     font-size: 39px;

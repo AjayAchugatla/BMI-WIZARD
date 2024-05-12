@@ -127,20 +127,20 @@
                 </div>
                 <div class="inp2 inp">
                     <label for="age">Age : </label>
-                    <input type="text" id="age" required>
+                    <input type="text" id="age" required autocomplete="off">
                 </div>
 
                 <div class="inp3 inp">
                     <label for="weight">Weight : </label>
-                    <input type="text" id="kgs" placeholder="kgs" required>
-                    <input type="text" id="lbs" class="none" placeholder="lbs" required>
+                    <input type="text" id="kgs" placeholder="kgs" required autocomplete="off">
+                    <input type="text" id="lbs" class="none" placeholder="lbs" required autocomplete="off">
                     <button class="units" id="w">in lbs</button>
                 </div>
                 <div class="inp4 inp">
                     <label for="weight">Height : </label>
-                    <input type="text" id="cms" placeholder="cms" required>
-                    <input type="text" id="fts" class="none" placeholder="feets" required>
-                    <input type="text" id="ins" class="none" placeholder="inches" required>
+                    <input type="text" id="cms" placeholder="cms" required autocomplete="off">
+                    <input type="text" id="fts" class="none" placeholder="feets" required autocomplete="off">
+                    <input type="text" id="ins" class="none" placeholder="inches" required autocomplete="off">
                     <button class="units" id="h">in fts</button>
                 </div>
                 <div class="sub">
@@ -151,20 +151,24 @@
             </form>
         </div>
     </main>
-    <div class="main">
-        <div class="res">Result : <span class="val"></span></div>
-        <img src="./Images/BMI-chart.png" alt="">
+    <div class="main hidden">
+        <div class="res">Your BMI : <span class="val"></span></div>
+        <div class="cond">
+            <p></p>
+            <div class="mode">
+                <button>Easy</button>
+                <button>Medium</button>
+                <button>Hard</button>
+            </div>
+        </div>
         <button class="Btn">
-
             <div class="sign"><svg viewBox="0 0 512 512">
                     <path
                         d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
                     </path>
                 </svg></div>
-
             <div class="text">Back</div>
         </button>
-
     </div>
     <hr>
     <script src="https://kit.fontawesome.com/0ff8f72c28.js" crossorigin="anonymous"></script>

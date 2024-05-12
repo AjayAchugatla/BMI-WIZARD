@@ -410,13 +410,14 @@ hr{
   display: flex;
   width: 100%;
   align-items: center;
-  height: 100vh;
+  /* height: 75vh; */
   flex-direction: column;
   position: relative;
-  top:-3px;
+  top:-25px;
   gap: 50px;
-  padding-top: 50px;
+  padding-top: 70px;
   display: none;
+  margin-top: 20px;
 }
 
 .res{
@@ -527,6 +528,7 @@ section img{
     position: relative;
     right: 0px;
   }
+
 }
 @media (max-height:800px) and (max-width:420px) {
   main{
@@ -540,9 +542,14 @@ section img{
     width:300px;
     height: 220px;
   }
-
   h1{
     font-size: 40px !important;
+  }
+  .cond{
+    width: 90% !important;
+  }
+  .cond p{
+    text-align: justify !important;
   }
 }
 
@@ -640,4 +647,24 @@ h1{
   margin-left: 20px;
   margin-right: 0px;
   font-size: 20px;
+}
+
+.cond{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  position: relative;
+  top: -20px;
+  background-color:whitesmoke;
+  border-radius: 8px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  padding: 20px;
+}
+
+.cond p{
+  text-align: left;
+  font-size: 21px;
 }

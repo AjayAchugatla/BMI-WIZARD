@@ -115,3 +115,18 @@ document.querySelector(".Btn").addEventListener("click",()=>{
     document.querySelector("main").style.display = "flex";
     document.querySelector(".main").classList.add("none");
 })
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+
+const hid = document.querySelectorAll(".hidden");
+hid.forEach((el)=>observer.observe(el));
+

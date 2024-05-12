@@ -489,8 +489,8 @@ section img{
 #aside{
   display: flex;
   flex-direction: row-reverse;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   gap:20px;
 }
 
@@ -634,4 +634,10 @@ h1{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+#aside ol{
+  margin-left: 20px;
+  margin-right: 0px;
+  font-size: 20px;
 }

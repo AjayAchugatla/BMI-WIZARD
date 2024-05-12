@@ -23,7 +23,7 @@
         <button class="checkbtn">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <label class="logo"><a href="#section" >BMI Wizard</a></label>
+        <label class="logo"><a href="#section">BMI Wizard</a></label>
         <ul>
             <li class="li"><a href="#box">BMI Calculator</a></li>
             <li class="li"><a href="#">Facts About BMI</a></li>
@@ -54,10 +54,13 @@
         <div class="what">
             <h2>What is BMI?</h2>
             <p>
-            Big Macs Inside? Belly Might Implode? Good guesses, but BMI actually stands for <i><b>Body Mass Index</b></i>, and it’s a
-            really important measure for anyone trying to lose weight.BMI is a simple measure of your weight in relation to your height.
-            BMI is a numerical measure that evaluates an individual's body fat based on their height and weight. <br><br> Calculated by dividing one's weight in kilograms by the square of their height in meters, or by dividing weight in pounds by height in inches squared and multiplying by 703, BMI serves as a screening tool for assessing weight status in adults.
-            <a href="https://en.wikipedia.org/wiki/Body_mass_index" style="color: rgb(0, 153, 255);">Know more</a>   
+                Big Macs Inside? Belly Might Implode? Good guesses, but BMI actually stands for <i><b>Body Mass Index</b></i>, and it’s a really important measure for anyone trying to lose weight. BMI is a simple numerical measure of your weight in relation to your height, it evaluates an individual's weight status based on their height and weight. Calculated by dividing one's weight in kilograms by the square of their height in meters, BMI serves as a screening
+                tool for assessing weight status in adults.
+                <br><br>
+                BMI is used differently for people aged 2 to 20. It is calculated in the same way as for adults but then compared to typical values for other children or youth of the same age. Instead of comparison against fixed thresholds for underweight and overweight, the BMI is compared against the percentiles for children of the same sex and age.
+                A BMI that is less than the 5th percentile is considered underweight and above the 95th percentile is considered obese. Children with a BMI between the 85th and 95th percentile are considered to be overweight. <br>
+                <a href="https://en.wikipedia.org/wiki/Body_mass_index" style="color: rgb(0, 153, 255);"
+                    target="_blank">Know more About BMI</a>
             </p>
         </div>
     </section>
@@ -69,11 +72,31 @@
         <div class="what">
             <h2>Understanding BMI Categories</h2>
             <p>
-                BMI categorizes individuals into five primary classifications: underweight, normal weight, overweight, obese, and extreme obesity. Underweight individuals typically possess a BMI below 18.5, whereas those falling within the range of 18.5 to 24.9 are classified as normal weight. Individuals with a BMI between 25 and 29.9 are considered overweight, while those with a BMI of 30 or higher fall into the obese category. Extreme obesity is characterized by a BMI of 35 or higher, indicating a significantly heightened risk of severe health complications.
+                Once calculated, BMI values fall into different categories: <br><br>
+                <ol>
+                    <li>
+                        Underweight: BMI below 18.5 indicates that a person may be underweight, which can pose health risks such
+                        as weakened immune system, osteoporosis, and fertility issues.
+                    </li><br>
+                    <li>
+                        Normal weight: BMI ranging from 18.5 to 24.9 suggests a healthy weight range for most adults. However,it's important to note that BMI does not differentiate between muscle mass and fat mass, so individuals with high muscle mass may fall into this category despite being fit.
+                    </li><br>
+                    <li>
+                        Overweight: BMI between 25 and 29.9 indicates excess weight, which may increase the risk of developing various health conditions including heart disease, type 2 diabetes, and certain cancers.
+
+                    </li><br>
+                    <li>
+                        Obesity: BMI of 30 or higher signifies obesity, a condition associated with significantly increased health risks, including hypertension, stroke, sleep apnea, and joint problems.
+                    </li><br>
+                    <li>
+                        Extreme Obesity: BMI of 40 or higher is classified as extreme obesity. Individuals in this category face
+                        even greater health risks, including severe cardiovascular disease, diabetes, and reduced life expectancy.
+                    </li><br>
+            </ol>
             </p>
         </div>
     </section>
-    <hr> 
+    <hr>
     <main class="hidden">
         <h1>Check Your BMI</h1>
         <div class="box" id="box">
@@ -132,16 +155,21 @@
         <div class="res">Result : <span class="val"></span></div>
         <img src="./Images/BMI-chart.png" alt="">
         <button class="Btn">
-  
-            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-            
+
+            <div class="sign"><svg viewBox="0 0 512 512">
+                    <path
+                        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                    </path>
+                </svg></div>
+
             <div class="text">Back</div>
-          </button>
-                    
+        </button>
+
     </div>
     <hr>
     <script src="https://kit.fontawesome.com/0ff8f72c28.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

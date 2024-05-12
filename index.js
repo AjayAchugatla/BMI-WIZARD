@@ -7,8 +7,8 @@ document.querySelector(".checkbtn").addEventListener("click", () => {
 
 document.querySelector(".input").addEventListener("click", () => {
     document.querySelector("nav").classList.toggle("black");
-    document.querySelector("main").classList.toggle("black");
-    document.querySelector(".main").classList.toggle("black");
+    // document.querySelector("main").classList.toggle("black");
+    // document.querySelector(".main").classList.toggle("black");
     document.querySelector("body").classList.toggle("black");
 })
 

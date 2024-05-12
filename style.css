@@ -528,7 +528,11 @@ section img{
     right: 0px;
   }
 }
-
+@media (max-height:800px) and (max-width:420px) {
+  main{
+    top:43px;
+  }
+}
 
 @media (max-width:480px) {
   

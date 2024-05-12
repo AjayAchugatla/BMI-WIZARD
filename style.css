@@ -134,11 +134,6 @@ nav ul li a:hover,nav ul li a:active{
       font-size: 30px;
       padding: 0px 20px; 
     }
-    .ml10 {
-      margin-right: 25px;
-      margin-left: 28px;
-    }
-    
 }
 
 .block{
@@ -521,7 +516,7 @@ section img{
     font-size: 39px;
   }
   main{
-    margin: -30px 0;
+    margin: -65px 0;
   }
   
   #aside{

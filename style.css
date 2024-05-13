@@ -557,6 +557,7 @@ section img{
 
 h1{
   font-size: 50px;
+  font-weight: 500;
 }
 
 .Btn {
@@ -687,4 +688,8 @@ h1{
   padding: 24px 0 6px;
   display: flex;
   gap:20px;
+}
+
+#cat{
+  margin-bottom: 30px;
 }

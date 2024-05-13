@@ -254,7 +254,7 @@ nav ul li a:hover,nav ul li a:active{
 
 main{
   position: relative;
-  top:-4px;
+  top:0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,17 +418,12 @@ hr{
   padding-top: 70px;
   display: none;
   margin-top: 20px;
+
 }
 
 .res{
   font-size: 50px;
   font-family: "Josefin Sans", sans-serif ;  
-}
-
-.main img{
-  height: 40vh;
-  width: 40vw;
-  border-radius: 4px;
 }
 
 .cta{
@@ -528,7 +523,6 @@ section img{
     position: relative;
     right: 0px;
   }
-
 }
 @media (max-height:800px) and (max-width:420px) {
   main{
@@ -550,6 +544,14 @@ section img{
   }
   .cond p{
     text-align: justify !important;
+  }
+  .mode{
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  
+  .mode button{
+    font-size: 16px;
   }
 }
 
@@ -656,15 +658,33 @@ h1{
   flex-direction: column;
   width: 70%;
   position: relative;
-  top: -20px;
+  top: -30px;
   background-color:whitesmoke;
   border-radius: 8px;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-  padding: 20px;
+  padding: 25px;
+  margin-bottom: -30px;
 }
 
 .cond p{
   text-align: justify;
   font-size: 19px;
+}
+
+.mode button{
+  padding:12px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(189, 221, 249, 0.587);
+  color: black;
+  font-size: 16px;
+}
+
+
+.mode{
+  padding: 24px 0 6px;
+  display: flex;
+  gap:20px;
 }

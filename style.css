@@ -553,6 +553,11 @@ section img{
   .mode button{
     font-size: 16px;
   }
+
+  .not{
+    position: relative;
+    top: 30px;
+  }
 }
 
 h1{
@@ -692,4 +697,9 @@ h1{
 
 #cat{
   margin-bottom: 30px;
+}
+
+
+.footer{
+  
 }

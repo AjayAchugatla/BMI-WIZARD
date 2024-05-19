@@ -69,6 +69,7 @@ document.querySelector("#other").addEventListener("click", (e) => {
     document.querySelector(".cta").style.backgroundColor = "rgb(164, 24, 235)"
 })
 
+let res = 0;
 
 document.querySelector(".cta").addEventListener("click", (e) => {
     e.preventDefault();
@@ -105,7 +106,7 @@ document.querySelector(".cta").addEventListener("click", (e) => {
         document.querySelector("main").style.display = "none";
         document.querySelector(".main").classList.remove("none");
         document.querySelector(".main").style.display = "flex";
-        let res = (val) / (cms * cms);
+        res = (val) / (cms * cms);
         document.querySelector(".val").innerText = Math.round(res);
         if (res < 18.5) {
             document.querySelector(".val").style.color = "rgb(63, 148, 228)";
@@ -150,3 +151,26 @@ const observer = new IntersectionObserver((entries)=>{
 const hid = document.querySelectorAll(".hidden");
 hid.forEach((el)=>observer.observe(el));
 
+const modes = document.querySelectorAll(".mode a")
+modes.forEach((mode)=>{
+    mode.addEventListener("click",(e)=>{
+        const sel = e.target.innerHTML;
+        const ad = `./Pages/`
+        
+        if (res < 18.5) {
+            e.target.attributes[0].value = ad+`UnderWeight/${sel}.html`; 
+        }
+        else if (res >= 18.5 && res < 25) {
+            e.target.attributes[0].value = ad+`Normal/${sel}.html`; 
+        }
+        else if (res >= 25 && res < 30) {
+            e.target.attributes[0].value = ad+`OverWeight/${sel}.html`; 
+        }
+        else if (res >= 30 && res < 35) {
+            e.target.attributes[0].value = ad+`Obese/${sel}.html`; 
+        }
+        else {
+            e.target.attributes[0].value = ad+`ExtremeObese/${sel}.html`; 
+        }
+    })
+})

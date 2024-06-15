@@ -1,4 +1,4 @@
-BMI Wizard
+BMI Wizard\n
 Overview
 BMI Wizard is a web application designed to help users calculate their Body Mass Index (BMI) and receive personalized diet and exercise recommendations based on their BMI category. The application is intuitive and user-friendly, catering to users of all backgrounds to improve their health through informed decisions.
 

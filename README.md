@@ -1,5 +1,4 @@
 BMI Wizard
-
 Overview
 BMI Wizard is a web application designed to help users calculate their Body Mass Index (BMI) and receive personalized diet and exercise recommendations based on their BMI category. The application is intuitive and user-friendly, catering to users of all backgrounds to improve their health through informed decisions.
 
@@ -31,7 +30,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/bmi-wizard.git
+git clone https://github.com/AjayAchugatla/bmi-wizard.git
 Navigate to the project directory:
 bash
 Copy code
@@ -56,9 +55,7 @@ Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Create a new Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 Contact
-For any questions or suggestions, please contact yourname@domain.com.
-
+For any questions or suggestions, please contact ajayachugatla17@gmail.com.

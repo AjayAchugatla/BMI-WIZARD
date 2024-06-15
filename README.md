@@ -19,9 +19,24 @@ Check out the live version of the application [here](https://bmi-wizard.netlify.
 
 ## Screenshots
 
-![BMI Wizard Screenshot](url-to-screenshot)
+![Home](https://github.com/AjayAchugatla/BMI-WIZARD/assets/152001933/5e430e0b-b005-4ca5-9d47-36fdb241dc9f)
 
-## Project Structure
+![Cal](https://github.com/AjayAchugatla/BMI-WIZARD/assets/152001933/d4491f6e-2071-488e-98bf-03b953339069)
 
-The project is structured as follows:
+![Value](https://github.com/AjayAchugatla/BMI-WIZARD/assets/152001933/c7aadad4-0c1a-4abf-bb8c-4022bedf10df)
 
+## Usage
+
+- **Calculate BMI**: Enter your weight and height, then click "Calculate" to see your BMI.
+- **View Recommendations**: Based on your BMI, the app provides tailored diet and exercise plans.
+- **Explore Options**: Choose between simple, moderate, and challenging plans to suit your lifestyle.
+
+## Technology Stack
+
+- **HTML5** 
+- **CSS3**
+- **JavaScript**
+
+## Contact
+
+For any questions or suggestions, please contact [ajayachugatla17@gmail.com](mailto:ajayachugatla17@gmail.com).
